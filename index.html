@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div>
+      a div inside the body of the site
+      <button id='click'>click</button>
+    </div>
+  </body>
+</html>
+
+<script>
+  let button = document.getElementById('click');
+
+  button.addEventListener('click', function() {
+    window.open('https://www.news.com.au','winname','directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=yes,width='+window.screen.width+',height='+window.screen.height);
+  });
+</script>
