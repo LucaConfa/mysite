@@ -23,6 +23,6 @@
     const urlParams = new URLSearchParams(window.location.search);
     const url = urlParams.get("pxyz-url");
     console.log(url);
-    window.location.replace(url);
+    window.location.replace(`${url}?pxyz-stop=true`);
   });
 </script>
