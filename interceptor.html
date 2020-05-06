@@ -21,7 +21,8 @@
   button.addEventListener("click", function () {
     console.log("continue click");
     const urlParams = new URLSearchParams(window.location.search);
-    const url = urlParams.get("pxyz-url");
+    const urlEncoded = urlParams.get("pxyz-url");
+    const url = urlEncoded ? decodeURIComponent(urlEncoded) : null;
     console.log(url);
     window.location.replace(`${url}?pxyz-stop-redirect=true`);
   });
