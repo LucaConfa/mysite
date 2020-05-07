@@ -26,7 +26,8 @@
     const url = urlEncoded ? decodeURIComponent(urlEncoded) : null;
     console.log(url);
     if (url) {
-      window.location.replace(`${url}?pxyz-stop-redirect=true`);
+      const separator = url.includes(`?`) ? "&" : "?";
+      window.location.replace(`${url}${separator}pxyz-stop-redirect=true`);
     }
   });
 </script>
