@@ -24,10 +24,21 @@
     const urlEncoded = urlParams.get("pxyz-url");
     console.log("urleEncoded", urlEncoded);
     const url = urlEncoded ? decodeURIComponent(urlEncoded) : null;
+
     console.log(url);
     if (url) {
       const separator = url.includes(`?`) ? "&" : "?";
-      window.location.replace(`${url}${separator}pxyz-stop-redirect=true`);
+      const stopRedirectQueryString = `${separator}pxyz-stop-redirect=true`;
+      // we need to check if the url has an # in it, if so we need to insert the query string before it
+      const hashIndex = url.indexOf("#");
+      const redirectUrl =
+        hashIndex > 0
+          ? `${url.slice(0, hashIndex)}${stopRedirectQueryString}${url.slice(
+              hashIndex
+            )}`
+          : `${url}${stopRedirectQueryString}`;
+
+      window.location.replace(redirectUrl);
     }
   });
 </script>
