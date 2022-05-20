@@ -1,0 +1,227 @@
+body {
+    min-width:600px!important;
+}
+
+/* Video Feed Styling */
+#overlay {
+    z-index: 1;
+}
+
+/* Navbar styling */
+#webgazerNavbar {
+    left: 320px;
+    z-index: 0;
+    box-shadow: 0px 3px 5px #ddd;
+    border:0px;
+    background-color: #fff;
+    display: none;
+}
+
+#Accuracy a{
+    background-color: #222;
+    color: #eee;
+    left: -15px;
+    padding-left: 80px;
+    padding-right: 40px;
+}
+#Accuracy {
+    background-color: #222;
+    padding-left: inherit;
+}
+
+li {
+    padding-left: 50px;
+}
+.navbar-right li {
+    padding-right: 20px;
+}
+
+.helpBtn {
+    padding: 15px;
+    border: none;
+    background: none;
+    color: #777;
+}
+.helpBtn a {
+    background: none;
+    color: #777;
+}
+.helpBtn a:hover {
+    color: black!important;
+    text-decoration: none;
+}
+.modal-header {
+    border-bottom: none!important;
+}
+
+/* Calibration button styling */
+.Calibration{
+    width: 20px;
+    height: 20px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    background-color: red;
+    opacity: 0.2;
+    border-color: black;
+    border-style: solid;
+    position:fixed;
+}
+
+/* MAE point position */
+:root {
+  --mae-point-top: 2.5%;
+  --mae-point-left: 2.5%;
+  --mae-point-bottom: 2.5%;
+}
+
+/* Calibration point position */
+#Pt1{
+    top: var(--mae-point-top);
+    left:2vw;
+}
+#Pt2{
+    top: var(--mae-point-top);
+    left:50vw;
+    margin-left: 340;
+}
+#Pt3{
+    top: var(--mae-point-top);
+    right:2vw;
+}
+#Pt4{
+    top:50vh;
+    left:2vw;
+}
+#Pt5{
+    top: 50vh;
+    left: 50vw;
+}
+#Pt6{
+    top: 50vh;
+    right:2vw;
+}
+#Pt7{
+    bottom:2vw;
+    left: 2vw;
+}
+#Pt8{
+    bottom:2vw;
+    left:50vw;
+}
+#Pt9{
+    bottom:2vw;
+    right:2vw;
+}
+
+#webgazerFaceFeedbackBox::before {
+  content: '';
+  opacity: 0.4!important;
+}
+
+.maeContainer {
+  z-index: 99999 !important;
+}
+
+.maePoint {
+  display: block;
+  background-color: pink;
+  opacity: 0.8;
+  box-sizing: border-box;
+  border-radius: 25px;
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  border-style: solid;
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+
+#m1 {
+  left: var(--mae-point-left);
+  top: var(--mae-point-top);
+  border-color: pink;
+  display: none;
+}
+
+#m2 {
+  left: 50%;
+  top: var(--mae-point-top);
+  border-color: pink;
+  display: none;
+}
+
+#m3 {
+  left: calc(100% - 20px -  var(--mae-point-left));
+  top: var(--mae-point-top);
+  border-color: pink;
+  display: none;
+}
+
+#m4 {
+  left: var(--mae-point-left);
+  top: 50%;
+  border-color: pink;
+  display: none;
+}
+
+#m5 {
+  left: 50%;
+  top: 50%;
+  border-color: pink;
+  display: none;
+}
+
+#m6 {
+  left: calc(100% - 20px -  var(--mae-point-left));
+  top: 50%;
+  border-color: pink;
+  display: none;
+}
+
+
+#m7 {
+  left: var(--mae-point-left);
+  bottom: var(--mae-point-bottom);
+  border-color: pink;
+  display: none;
+}
+
+#m8 {
+  left: 50%;
+  bottom: var(--mae-point-bottom);
+  border-color: pink;
+  display: none;
+}
+
+#m9 {
+  left: calc(100% - 20px -  var(--mae-point-left));
+  bottom: var(--mae-point-bottom);
+  border-color: pink;
+  display: none;
+}
+
+.maeTable {
+  margin: 0 auto;
+}
+
+.maeTable th {
+  padding: 0 30px;
+}
+
+.maeTable td:nth-child(2){
+  text-align: right;
+  padding-right: 10px;
+}
+
+.maeTable, th, td {
+  border: 1px solid black;
+}
+
+#loadingMAE {
+  display: none;
+  margin: 50% auto;
+  text-align: center;
+}
+
