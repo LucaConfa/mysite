@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Title } from './title';
+import gumgumMR_logo from '../gumgumMR_logo.png';
 
 export const ControlSurvey = (props) => {
   const [selectedItem, setSelectedItem] = useState(0);
@@ -7,18 +8,18 @@ export const ControlSurvey = (props) => {
 
   return (
     <>
+      <img
+        style={{ width: '88px', height: '100%' }}
+        src={gumgumMR_logo}
+        alt="Gumgum Market Research Logo"
+      />
       <div className="progressBar">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="246"
-          height="14"
-          viewBox="0 0 246 14"
-          fill="none"
-        >
-          <line x1="238" y1="7.5" x2="5" y2="7.5" stroke="black" />
-          <circle cx="7" cy="7" r="7" fill="black" />
-          <circle cx="123" cy="7" r="7" fill="#D9D9D9" />
-          <circle cx="239" cy="7" r="7" fill="#D9D9D9" />
+        <svg width="144" height="8" viewBox="0 0 144 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="4.09753" y="1.71428" width="67.9024" height="4.57143" fill="#F2F6F7"/>
+          <rect x="72" y="1.71428" width="67.9024" height="4.57143" fill="#F2F6F7"/>
+          <ellipse cx="4.09756" cy="4" rx="4.09756" ry="4" fill="#49C2DE"/>
+          <ellipse cx="72" cy="4" rx="4.09756" ry="4" fill="#F2F6F7"/>
+          <ellipse cx="139.902" cy="4" rx="4.09756" ry="4" fill="#F2F6F7"/>
         </svg>
       </div>
       <Title text="Have you seen an add for BMW in the last 24 hours?" />

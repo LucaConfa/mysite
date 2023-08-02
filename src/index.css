@@ -40,8 +40,10 @@ a {
 .multipleOptions {
   width: 221px;
   height: 44px;
-  background: #f2f2f2;
-  color: #000;
+  border-radius: 4px;
+  border: 1px solid #DADADA;
+  background: #F2F6F7;
+  color: #858585;
   text-align: center;
   line-height: normal;
   flex-shrink: 0;
@@ -53,7 +55,9 @@ a {
 }
 
 div.selected {
-  background: #979797;
+  background: #008D9A;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 .title {
@@ -75,7 +79,8 @@ div.button {
   width: 182px;
   height: 44px;
   flex-shrink: 0;
-  background: #d9d9d9;
+  background: #008D9A;
+  color: #ffffff;
   margin-top: 5vh;
   font-weight: bold;
   flex-wrap: wrap;
@@ -88,8 +93,9 @@ div.button {
 }
 
 .button.disabled {
-  background: #d9d9d9;
-  color: white;
+  background: #f2f6f7;
+  color: #858585;
+  font-weight: 400;
 }
 
 div.scale {
@@ -102,8 +108,10 @@ div.scale {
 }
 
 .inRow {
-  background: #f2f2f2;
-  color: #000;
+  border-radius: 4px;
+  border: 1px solid #DADADA;
+  background: #F2F6F7;
+  color: #858585;
   margin-bottom: 2vh;
   width: 93px;
   height: 44px;
@@ -119,13 +127,15 @@ div.scale {
   text-align: center;
   line-height: normal;
   justify-content: center;
+  margin: 0 10px;
 }
 
 .textContainer {
   width: 231px;
   height: 80px;
   flex-shrink: 0;
-  background: #d9d9d9;
+  background: #008D9A;
+  color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -133,11 +143,17 @@ div.scale {
   line-height: normal;
   justify-content: center;
   margin-bottom: 8vh;
+  font-size: 12px;
+  flex-direction: column;
+  border-radius: 4px;
+  
 }
 
 .scaleItem {
-  background: #f2f2f2;
-  color: #000;
+  border-radius: 4px;
+  border: 1px solid #DADADA;
+  background: #F2F6F7;
+  color: #858585;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -153,4 +169,9 @@ div.scale {
   width: 44px;
   height: 44px;
   margin: 10px;
+}
+
+.textBold {
+  font-weight: 700;
+  font-size: 16px;
 }

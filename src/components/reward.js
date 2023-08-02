@@ -1,9 +1,15 @@
 import { Title } from './title';
+import gumgumMR_logo from '../gumgumMR_logo.png';
 
 export const Reward = (props) => {
   const { onClick } = props;
   return (
     <>
+      <img
+        style={{ width: '88px', height: '100%' }}
+        src={gumgumMR_logo}
+        alt="Gumgum Market Research Logo"
+      />
       <Title
         text="Thank you very much for participating in our study! We hope you enjoy
         your reward!"
@@ -14,8 +20,8 @@ export const Reward = (props) => {
           onClick('controlSurvey');
         }}
       >
-        <span style={{ fontWeight: 'bold' }}> Add $5 </span> <br /> with another
-        survey
+        <div className="textBold">Add $5 </div>
+        <div>with another survey</div>
       </div>
       <a
         href="#"
