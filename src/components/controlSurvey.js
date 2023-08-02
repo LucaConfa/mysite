@@ -14,12 +14,30 @@ export const ControlSurvey = (props) => {
         alt="Gumgum Market Research Logo"
       />
       <div className="progressBar">
-        <svg width="144" height="8" viewBox="0 0 144 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="4.09753" y="1.71428" width="67.9024" height="4.57143" fill="#F2F6F7"/>
-          <rect x="72" y="1.71428" width="67.9024" height="4.57143" fill="#F2F6F7"/>
-          <ellipse cx="4.09756" cy="4" rx="4.09756" ry="4" fill="#49C2DE"/>
-          <ellipse cx="72" cy="4" rx="4.09756" ry="4" fill="#F2F6F7"/>
-          <ellipse cx="139.902" cy="4" rx="4.09756" ry="4" fill="#F2F6F7"/>
+        <svg
+          width="144"
+          height="8"
+          viewBox="0 0 144 8"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect
+            x="4.09753"
+            y="1.71428"
+            width="67.9024"
+            height="4.57143"
+            fill="#F2F6F7"
+          />
+          <rect
+            x="72"
+            y="1.71428"
+            width="67.9024"
+            height="4.57143"
+            fill="#F2F6F7"
+          />
+          <ellipse cx="4.09756" cy="4" rx="4.09756" ry="4" fill="#49C2DE" />
+          <ellipse cx="72" cy="4" rx="4.09756" ry="4" fill="#F2F6F7" />
+          <ellipse cx="139.902" cy="4" rx="4.09756" ry="4" fill="#F2F6F7" />
         </svg>
       </div>
       <Title text="Have you seen an add for BMW in the last 24 hours?" />
@@ -54,7 +72,7 @@ export const ControlSurvey = (props) => {
         className={`button ${selectedItem ? '' : 'disabled'}`}
         onClick={() => {
           if (selectedItem) {
-            onClick('claim');
+            onClick('claim2');
           }
         }}
       >
