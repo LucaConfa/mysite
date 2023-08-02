@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/mysite/static/css/main.d2e311ae.css",
+    "main.js": "/mysite/static/js/main.fdd8bba6.js",
+    "static/js/787.4d964986.chunk.js": "/mysite/static/js/787.4d964986.chunk.js",
+    "static/media/tremendous.png": "/mysite/static/media/tremendous.ba4e6092c0c5213adf67.png",
+    "index.html": "/mysite/index.html",
+    "main.d2e311ae.css.map": "/mysite/static/css/main.d2e311ae.css.map",
+    "main.fdd8bba6.js.map": "/mysite/static/js/main.fdd8bba6.js.map",
+    "787.4d964986.chunk.js.map": "/mysite/static/js/787.4d964986.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d2e311ae.css",
+    "static/js/main.fdd8bba6.js"
+  ]
+}
